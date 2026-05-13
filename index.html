@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapNow | Professional Visual Storytelling</title>
+    <meta name="description" content="Professional visual storytelling tailored for every moment. From cinematic drone shots to intimate photography, we provide the lens; you provide the memory.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="logo-text">snap<span class="highlight">now</span></span>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-links">
+                <a href="#services">Packages</a>
+                <a href="#gear">Our Gear</a>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Floating Typography) -->
+    <section class="hero" id="home">
+        <!-- We will use the hero_bg image as background in CSS -->
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="floating-text hero-slide-side">Capture.<br>Create.<br>Inspire.</h1>
+            <p class="sub-headline hero-slide-side">Professional visual storytelling tailored for every moment.<br>From cinematic drone shots to intimate photography,<br>we provide the lens; you provide the memory.</p>
+            <a href="#services" class="btn btn-primary btn-large hero-slide-side">Explore Packages</a>
+        </div>
+    </section>
+
+    <!-- Core Pillars -->
+    <section class="pillars section-padding" id="pillars">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Core <span class="highlight">Pillars</span></h2>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card reveal delay-1">
+                    <div class="pillar-icon"><i class="fa-solid fa-camera-retro"></i></div>
+                    <h3>Professional Team</h3>
+                    <p>Expert eyes behind every lens ensuring your vision comes to life.</p>
+                </div>
+                <div class="pillar-card reveal delay-2">
+                    <div class="pillar-icon"><i class="fa-solid fa-film"></i></div>
+                    <h3>Cinematic Quality</h3>
+                    <p>High-definition 4K visuals as our standard for all shoots.</p>
+                </div>
+                <div class="pillar-card reveal delay-3">
+                    <div class="pillar-icon"><i class="fa-solid fa-helicopter"></i></div>
+                    <h3>Advanced Equipment</h3>
+                    <p>Gimbal stabilization, drones, and state-of-the-art cinema cameras.</p>
+                </div>
+                <div class="pillar-card reveal delay-4">
+                    <div class="pillar-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Creative Editing</h3>
+                    <p>Professional color grading and social-media-ready reels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages (Interactive Grid) -->
+    <section class="packages section-padding bg-light" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Service <span class="highlight">Packages</span></h2>
+                <p>Transparent pricing for every scale of production.</p>
+            </div>
+            <div class="packages-grid">
+                
+                <!-- Package 1 -->
+                <div class="package-card reveal">
+                    <div class="package-header">
+                        <span class="package-number">01</span>
+                        <h3>Mobile Pro</h3>
+                    </div>
+                    <div class="package-price">AED 599</div>
+                    <div class="package-best-for">Best For: <strong>Social Media</strong></div>
+                    <ul class="package-highlights">
+                        <li><i class="fa-solid fa-check"></i> Smartphone videography</li>
+                        <li><i class="fa-solid fa-check"></i> Vertical reels</li>
+                        <li><i class="fa-solid fa-check"></i> Fast delivery</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Book Mobile Pro</a>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card reveal delay-1">
+                    <div class="package-header">
+                        <span class="package-number">02</span>
+                        <h3>Essential</h3>
+                    </div>
+                    <div class="package-price">AED 999</div>
+                    <div class="package-best-for">Best For: <strong>Documentation</strong></div>
+                    <ul class="package-highlights">
+                        <li><i class="fa-solid fa-check"></i> 1 Videographer</li>
+                        <li><i class="fa-solid fa-check"></i> Professional camera setup</li>
+                        <li><i class="fa-solid fa-check"></i> Raw footage coverage</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Book Essential</a>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card popular reveal delay-2">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="package-header">
+                        <span class="package-number">03</span>
+                        <h3>Signature</h3>
+                    </div>
+                    <div class="package-price">AED 1,299</div>
+                    <div class="package-best-for">Best For: <strong>Cinematic Reels</strong></div>
+                    <ul class="package-highlights">
+                        <li><i class="fa-solid fa-check"></i> 1 Videographer</li>
+                        <li><i class="fa-solid fa-check"></i> Gimbal shots & Stabilization</li>
+                        <li><i class="fa-solid fa-check"></i> Edited cinematic reel</li>
+                        <li><i class="fa-solid fa-check"></i> Professional color grading</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Book Signature</a>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-card reveal">
+                    <div class="package-header">
+                        <span class="package-number">04</span>
+                        <h3>Elite</h3>
+                    </div>
+                    <div class="package-price">AED 1,099</div>
+                    <div class="package-best-for">Best For: <strong>Portraits & Branding</strong></div>
+                    <ul class="package-highlights">
+                        <li><i class="fa-solid fa-check"></i> 1 Professional Photographer</li>
+                        <li><i class="fa-solid fa-check"></i> 20-25 high-quality edited photos</li>
+                        <li><i class="fa-solid fa-check"></i> Professional color correction</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Book Elite</a>
+                </div>
+
+                <!-- Package 5 -->
+                <div class="package-card reveal delay-1">
+                    <div class="package-header">
+                        <span class="package-number">05</span>
+                        <h3>Prestige</h3>
+                    </div>
+                    <div class="package-price">AED 2,299</div>
+                    <div class="package-best-for">Best For: <strong>Hybrid Events</strong></div>
+                    <ul class="package-highlights">
+                        <li><i class="fa-solid fa-check"></i> 1 Videographer + 1 Photographer</li>
+                        <li><i class="fa-solid fa-check"></i> Full event coverage</li>
+                        <li><i class="fa-solid fa-check"></i> Edited cinematic reel & photos</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Book Prestige</a>
+                </div>
+
+                <!-- Package 6 -->
+                <div class="package-card reveal delay-2">
+                    <div class="package-header">
+                        <span class="package-number">06</span>
+                        <h3>Forever</h3>
+                    </div>
+                    <div class="package-price">AED 2,299</div>
+                    <div class="package-best-for">Best For: <strong>Pre-Weddings</strong></div>
+                    <ul class="package-highlights">
+                        <li><i class="fa-solid fa-check"></i> Save-the-date specialized</li>
+                        <li><i class="fa-solid fa-check"></i> Romantic cinematic reel</li>
+                        <li><i class="fa-solid fa-check"></i> 1 Videographer + 1 Photographer</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Book Forever</a>
+                </div>
+
+                <!-- Package 7 -->
+                <div class="package-card reveal">
+                    <div class="package-header">
+                        <span class="package-number">07</span>
+                        <h3>Aerial Elite</h3>
+                    </div>
+                    <div class="package-price">AED 2,499+</div>
+                    <div class="package-best-for">Best For: <strong>Luxury Shoots</strong></div>
+                    <ul class="package-highlights">
+                        <li><i class="fa-solid fa-check"></i> Professional drone coverage</li>
+                        <li><i class="fa-solid fa-check"></i> High-quality aerials</li>
+                        <li><i class="fa-solid fa-check"></i> Cinematic aerial shots</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Book Aerial</a>
+                </div>
+
+                <!-- Package 8 -->
+                <div class="package-card premium reveal delay-1">
+                    <div class="package-header">
+                        <span class="package-number">08</span>
+                        <h3>Royal</h3>
+                    </div>
+                    <div class="package-price">AED 4,899</div>
+                    <div class="package-best-for">Best For: <strong>Full Production</strong></div>
+                    <ul class="package-highlights">
+                        <li><i class="fa-solid fa-check"></i> 2 Videographers & 2 Photographers</li>
+                        <li><i class="fa-solid fa-check"></i> Multi-camera setup</li>
+                        <li><i class="fa-solid fa-check"></i> Full edited event video & photos</li>
+                        <li><i class="fa-solid fa-check"></i> Teaser / highlight cinematic video</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Book Royal</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Add-Ons & Tech (Horizontal Scrolling) -->
+    <section class="gear section-padding" id="gear">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Premium <span class="highlight">Gear</span></h2>
+                <p>We use industry-leading technology to deliver exceptional results.</p>
+            </div>
+        </div>
+        
+        <div class="horizontal-scroll-container reveal delay-1">
+            <div class="gear-track">
+                
+                <div class="gear-item">
+                    <img src="assets/gear_gimbal.png" alt="Gimbal Stabilization">
+                    <div class="gear-info">
+                        <h4>Gimbal Stabilization</h4>
+                        <p>Smooth, steady, cinematic motion.</p>
+                    </div>
+                </div>
+
+                <div class="gear-item">
+                    <img src="assets/gear_camera.png" alt="Static Cinema Cameras">
+                    <div class="gear-info">
+                        <h4>Static Cinema Cameras</h4>
+                        <p>High-end sensors for stunning visuals.</p>
+                    </div>
+                </div>
+
+                <div class="gear-item">
+                    <img src="https://images.unsplash.com/photo-1519638831568-d9897f54ed69?q=80&w=800&auto=format&fit=crop" alt="Professional Lighting">
+                    <div class="gear-info">
+                        <h4>Professional Lighting</h4>
+                        <p>Studio-grade setups for perfect skin tones.</p>
+                    </div>
+                </div>
+
+                <div class="gear-item" id="drone-gear-item">
+                    <!-- Image will be updated if drone generation succeeds -->
+                    <img src="assets/gear_drone.png" alt="Drone Coverage">
+                    <div class="gear-info">
+                        <h4>Drone Coverage</h4>
+                        <p>Elevate your story from a new perspective.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer class="footer" id="contact">
+        <div class="container footer-content reveal">
+            <div class="footer-brand" style="flex: 1; min-width: 300px;">
+                <div class="logo">
+                    <span class="logo-text">snap<span class="highlight">now</span></span>
+                </div>
+                <p>Professional visual storytelling tailored for every moment.</p>
+                <div style="margin-top: 2rem;">
+                    <h3 style="color: var(--white);">Contact Us Directly</h3>
+                    <ul class="contact-list" style="margin-top: 1rem;">
+                        <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/971501234567">+971 50 123 4567</a></li>
+                        <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/snapnow.ae?igsh=MXgzcmY0dGpjYWptMg==" target="_blank">snapnow.ae</a></li>
+                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:info@snapnow.com">info@snapnow.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-booking" style="flex: 1; min-width: 300px;">
+                <h3 id="bookingFormTitle" style="color: var(--white); margin-bottom: 0.5rem;">Book a Package</h3>
+                <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Fill out the form below to submit a request.</p>
+                <form id="bookingForm" class="footer-form">
+                    <input type="hidden" id="selectedPackage" name="selectedPackage" value="">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" required placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="date" placeholder="Event Date (Optional)" onfocus="(this.type='date')" onblur="(this.value == '' ? this.type='text' : this.type='date')">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SnapNow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
