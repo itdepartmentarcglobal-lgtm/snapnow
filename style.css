@@ -536,7 +536,7 @@ a.hero-slide-side {
     gap: 2rem;
     padding: 0 2rem;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .gear-item {
@@ -546,7 +546,14 @@ a.hero-slide-side {
     position: relative;
     box-shadow: var(--shadow-soft);
     background: var(--dark);
-    group: hover;
+    border: 1px solid rgba(164, 214, 94, 0.1);
+    transition: var(--transition);
+}
+
+.gear-item:hover {
+    box-shadow: 0 15px 35px rgba(164, 214, 94, 0.2);
+    border-color: var(--primary);
+    transform: translateY(-5px);
 }
 
 .gear-item img {
@@ -756,6 +763,8 @@ a.hero-slide-side {
     .footer-content { flex-direction: column; gap: 2rem; }
     .footer-brand,
     .footer-booking { min-width: unset !important; width: 100%; max-width: 100%; }
+
+    .gear-track { justify-content: flex-start; }
 
     .section-header h2 { font-size: 2rem; }
 }
