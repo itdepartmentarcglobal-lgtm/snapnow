@@ -63,23 +63,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
 
     // Scroll Reveal Animation (Intersection Observer)
-    const revealElements = document.querySelectorAll('.reveal');
-
     const revealOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -80px 0px"
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
     };
 
-    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+    const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active');
+                entry.target.classList.add('reveal-active');
+                revealObserver.unobserve(entry.target);
             }
         });
     }, revealOptions);
 
-    revealElements.forEach(el => {
-        revealOnScroll.observe(el);
+    document.querySelectorAll('.reveal, .reveal-zoom').forEach(el => {
+        revealObserver.observe(el);
+    });
+
+    // Parallax Effect for Hero
+    const heroBg = document.querySelector('.hero-bg');
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        if (heroBg && scrolled < window.innerHeight) {
+            // Move background slightly slower than scroll
+            heroBg.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
     });
 
     // Horizontal Scroll for Gear Section (Optional enhancement)

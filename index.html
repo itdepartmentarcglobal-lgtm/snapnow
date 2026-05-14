@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,7 +22,10 @@
     <nav class="navbar">
         <div class="container nav-content">
             <div class="logo">
-                <span class="logo-text">snap<span class="highlight">now</span></span>
+                <a href="#home" class="logo-text">
+                    <img src="assets/logo_white.png" alt="SnapNow Logo" class="logo-img logo-white">
+                    <img src="assets/logo_black.png" alt="SnapNow Logo" class="logo-img logo-black">
+                </a>
             </div>
             <div class="hamburger">
                 <i class="fa-solid fa-bars"></i>
@@ -37,7 +40,7 @@
 
     <!-- Hero Section (Floating Typography) -->
     <section class="hero" id="home">
-        <!-- We will use the hero_bg image as background in CSS -->
+        <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1 class="floating-text hero-slide-side">Capture.<br>Create.<br>Inspire.</h1>
@@ -221,6 +224,44 @@
         </div>
     </section>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Moments (Floating Photo Grid) -->
+    <section class="featured-moments section-padding" id="moments">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Featured <span class="highlight">Moments</span></h2>
+                <p>Capturing the essence of every story through our lens.</p>
+            </div>
+            
+            <div class="moment-grid">
+                <div class="moment-item item-1 reveal-zoom floating">
+                    <img src="assets/wedding_moment.png" alt="Wedding Moment">
+                    <div class="moment-caption">
+                        <h4>Wedding Stories</h4>
+                        <p>Intimate & Emotional</p>
+                    </div>
+                </div>
+                <div class="moment-item item-2 reveal-zoom floating-delayed">
+                    <img src="assets/gear_camera.png" alt="Professional Production">
+                    <div class="moment-caption">
+                        <h4>Corporate Shoots</h4>
+                        <p>High-End Production</p>
+                    </div>
+                </div>
+                <div class="moment-item item-3 reveal-zoom floating">
+                    <img src="assets/hero_bg.png" alt="Event Highlights">
+                    <div class="moment-caption">
+                        <h4>Cinematic Reels</h4>
+                        <p>Dynamic Motion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Premium Add-Ons & Tech (Horizontal Scrolling) -->
     <section class="gear section-padding" id="gear">
         <div class="container">
@@ -242,9 +283,9 @@
                 </div>
 
                 <div class="gear-item">
-                    <img src="assets/gear_camera.png" alt="Static Cinema Cameras">
+                    <img src="assets/gear_camera.png" alt="Static Cinematic Cameras">
                     <div class="gear-info">
-                        <h4>Static Cinema Cameras</h4>
+                        <h4>Static Cinematic Cameras</h4>
                         <p>High-end sensors for stunning visuals.</p>
                     </div>
                 </div>
@@ -275,15 +316,18 @@
         <div class="container footer-content reveal">
             <div class="footer-brand" style="flex: 1; min-width: 300px;">
                 <div class="logo">
-                    <span class="logo-text">snap<span class="highlight">now</span></span>
+                    <a href="#home" class="logo-text">
+                        <img src="assets/logo_white.png" alt="SnapNow Logo" class="logo-img logo-white">
+                        <img src="assets/logo_black.png" alt="SnapNow Logo" class="logo-img logo-black">
+                    </a>
                 </div>
                 <p>Professional visual storytelling tailored for every moment.</p>
                 <div style="margin-top: 2rem;">
                     <h3 style="color: var(--white);">Contact Us Directly</h3>
                     <ul class="contact-list" style="margin-top: 1rem;">
-                        <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/971501234567">+971 50 123 4567</a></li>
+                        <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/97158551161">+971 58 551 161</a></li>
                         <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/snapnow.ae?igsh=MXgzcmY0dGpjYWptMg==" target="_blank">snapnow.ae</a></li>
-                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:info@snapnow.com">info@snapnow.com</a></li>
+                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:info@snapnow.ae">info@snapnow.ae</a></li>
                     </ul>
                 </div>
             </div>
